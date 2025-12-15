@@ -1,14 +1,37 @@
-<div class="dashboard">
-  <nav>
+<div class="dashboard-container">
+  <div class="sidebar">
+    <h2>Attendance App</h2>
     <ul>
-      <li><a routerLink="/dashboard">Dashboard</a></li>
-      <li><a routerLink="/attendance">Attendance</a></li>
-      <li><a routerLink="/history">History</a></li>
-      <li><a routerLink="/justifications">Justifications</a></li>
-      <li><button (click)="logout()">Logout</button></li>
+      <li><a routerLink="/dashboard" routerLinkActive="active">Dashboard</a></li>
+      <li><a routerLink="/attendance" routerLinkActive="active">Attendance</a></li>
+      <li><a routerLink="/history" routerLinkActive="active">History</a></li>
+      <li><a routerLink="/justifications" routerLinkActive="active">Justifications</a></li>
     </ul>
-  </nav>
-  <div class="content">
+    <button (click)="logout()" class="logout-btn">Logout</button>
+  </div>
+  <div class="main-content">
     <h1>Welcome to the Attendance App</h1>
+    <div class="modules">
+      <div class="module-card">
+        <img src="assets/images/dashboard.png" alt="Dashboard">
+        <h3>Dashboard</h3>
+        <p>Overview of your attendance.</p>
+      </div>
+      <div class="module-card">
+        <img src="assets/images/check-in-out.png" alt="Attendance">
+        <h3>Attendance</h3>
+        <p>Check in and check out.</p>
+      </div>
+      <div class="module-card">
+        <img src="assets/images/dashboard.png" alt="History">
+        <h3>History</h3>
+        <p>View your attendance history.</p>
+      </div>
+      <div class="module-card">
+        <img src="assets/images/evaluar_just.png" alt="Justifications">
+        <h3>Justifications</h3>
+        <p>Request and approve justifications.</p>
+      </div>
+    </div>
   </div>
 </div>

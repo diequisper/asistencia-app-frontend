@@ -1,1 +1,8 @@
-<p>attendance works!</p>
+<div class="attendance-container">
+  <h1>Attendance</h1>
+  <div class="buttons">
+    <button (click)="checkin()" class="btn checkin">Check In</button>
+    <button (click)="checkout()" class="btn checkout">Check Out</button>
+  </div>
+  <p *ngIf="message">{{ message }}</p>
+</div>
